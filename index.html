@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almacenando texto en LocalStorage</title>
+    <meta
+      name="description"
+      content="App Web que almacena texto en LocalStorage y asi no se pierda la información al refrescar la página."
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="contenido">
+      <div class="container">
+        <h1>LocalStorage</h1>
+        <div class="fila">
+          <div>
+            <form id="formulario">
+              <label for="tweet">Tweet:</label>
+              <textarea id="tweet"></textarea>
+              <div class="derecha flex">
+                <input
+                  class="agregar-btn"
+                  id="agregar-btn"
+                  type="submit"
+                  value="Agregar"
+                />
+              </div>
+            </form>
+          </div>
+          <div>
+            <h2>Mis Tweets</h2>
+            <div class="lista-tweets" id="lista-tweets"></div>
+          </div>
+        </div>
+        <!--.fila-->
+      </div>
+      <!--.container-->
+    </div>
+    <!--#contenido-->
+    <script src="js/app.js"></script>
+  </body>
+</html>
